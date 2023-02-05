@@ -1,0 +1,362 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: #010B31;
+}
+body header {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+body header .menuler {
+  width: 1125px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  position: relative;
+}
+body header .menuler .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+body header .menuler .menu {
+  display: flex;
+  gap: 25px;
+  transition: 250ms ease-in-out;
+}
+body header .menuler .menu a {
+  font-family: Poppins;
+  transition: 250ms ease-in-out;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 0px solid #3fa46a;
+  padding: 5px 0;
+}
+body header .menuler .menu a:hover, body header .menuler .menu a.active {
+  border-bottom: 4px solid #3fa46a;
+  padding: 0 0;
+}
+body header .menuler i {
+  display: none;
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  right: 325px;
+  top: 50px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+body header .topHeader {
+  width: 1125px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .topHeader h1.head {
+  width: 1125px;
+  margin: 50px auto;
+  color: #fff;
+  font-size: 32px;
+}
+body header .topHeader .searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+body header .topHeader .searchBar input {
+  width: 90%;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 0 25px;
+}
+body header .topHeader .searchBar button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #59224F;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  color: #fff;
+}
+body header .main {
+  width: 1125px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  padding: 25px;
+}
+body header .main .bloglar {
+  width: 1125px;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+body header .main .bloglar .card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: #ccc;
+}
+body header .main .bloglar .card img {
+  border-radius: 10px;
+}
+body header .main .bloglar .card h1 {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+body header .main .bloglar .card p {
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+body header .main .bloglar .card .date {
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #888;
+}
+body header .main .bloglar .card a {
+  color: #fff;
+  background: #59224F;
+  padding: 15px 50px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 250ms ease-in-out;
+}
+body header .main .bloglar .card a:hover {
+  box-shadow: 5px 5px 25px #59224F, -5px -5px 25px 5px #59224F;
+}
+body header .main .kategoriler {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+  background: #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+body header .main .kategoriler h1 {
+  color: #59224F;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+body header .main .kategoriler ul {
+  margin-bottom: 50px;
+}
+body header .main .kategoriler ul a {
+  color: #000;
+  text-decoration: none;
+  line-height: 25px;
+  transition: 250ms ease-in-out;
+}
+body header .main .kategoriler ul a:hover {
+  color: lightblue;
+}
+body header .main .kategoriler ul a i {
+  color: blue;
+  margin-right: 10px;
+}
+body header .main .kategoriler ul ul {
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+body header .main .kategoriler .enCok a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+body header .main .kategoriler .enCok a h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+body header .main .kategoriler .enCok a p {
+  font-size: 14px;
+}
+body header .main .kategoriler .etiketler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  line-height: 30px;
+}
+body header .main .kategoriler .etiketler a {
+  background: #59224F;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 250ms ease-in-out;
+}
+body header .main .kategoriler .etiketler a:hover {
+  color: #fff;
+  box-shadow: 2px 2px 10px #e71cc2, -2px -2px 10px #e71cc2;
+}
+body footer {
+  height: 100px;
+  background: #000011;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  body header .menuler {
+    width: 900px;
+  }
+  body header .menuler .logo a {
+    font-size: 28px;
+  }
+  body header .menuler .menu a {
+    font-size: 16px;
+  }
+  body header .topHeader {
+    width: 90%;
+  }
+  body header .topHeader .searchBar {
+    width: 50%;
+  }
+  body header .main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .main .bloglar {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body header .main .bloglar .card {
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    padding: 15px;
+  }
+  body header .main .bloglar .card img {
+    width: 400px;
+  }
+  body header .main .kategoriler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body header .main .kategoriler .enCok {
+    width: 300px;
+  }
+  body header .main .kategoriler .etiketler {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body header .menuler {
+    padding: 0;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+  }
+  body header .menuler .logo a {
+    display: block;
+    padding: 50px;
+    font-size: 28px;
+  }
+  body header .menuler .menu {
+    flex-direction: column;
+    position: absolute;
+    right: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-right: -150px;
+    gap: 0;
+    height: 100vh;
+    z-index: 5;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body header .menuler .menu a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 100px;
+    text-align: center;
+  }
+  body header .menuler .menu a:hover, body header .menuler .menu a.active {
+    border: none;
+    padding: 15px 100px;
+    color: green;
+  }
+  body header .menuler i {
+    display: block;
+  }
+  body header .topHeader h1.head {
+    font-size: 18px;
+  }
+  body header .topHeader .searchBar {
+    width: 120%;
+  }
+  body header .topHeader .searchBar input {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  body header .main .bloglar {
+    width: 100%;
+  }
+  body header .main .bloglar .card {
+    width: 90%;
+    height: auto;
+  }
+  body header .main .bloglar .card img {
+    width: 90%;
+  }
+  body header .main .kategoriler {
+    text-align: left;
+  }
+  body header .content {
+    padding: 15px;
+  }
+  body header .content h1 {
+    font-size: 20px;
+  }
+  body header .content p {
+    font-size: 16px;
+  }
+  body header .content a {
+    font-size: 14px;
+  }
+  body main {
+    padding: 0;
+  }
+  body main h1 {
+    padding-top: 50px;
+  }
+}/*# sourceMappingURL=blog.css.map */

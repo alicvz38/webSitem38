@@ -1,0 +1,205 @@
+body {
+  font-family: Poppins;
+}
+body header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+body header .menuler {
+  width: 1125px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  position: relative;
+}
+body header .menuler .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+body header .menuler .menu {
+  display: flex;
+  gap: 25px;
+  transition: 250ms ease-in-out;
+}
+body header .menuler .menu a {
+  font-family: Poppins;
+  transition: 250ms ease-in-out;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 0px solid #3fa46a;
+  padding: 5px 0;
+}
+body header .menuler .menu a:hover, body header .menuler .menu a.active {
+  border-bottom: 4px solid #3fa46a;
+  padding: 0 0;
+}
+body header .menuler i {
+  display: none;
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  right: 325px;
+  top: 50px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+body header .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #fff;
+  line-height: 50px;
+  text-shadow: 2px 2px 25px #fff;
+  text-align: center;
+}
+body header .content h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+body header .content a {
+  color: #fff;
+  text-decoration: none;
+  background: #5f2955;
+  transition: 250ms;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: 250ms ease-in-out;
+  text-shadow: none;
+}
+body header .content a:hover {
+  box-shadow: 2px 2px 50px 2px #bd30a3;
+}
+body main {
+  padding: 100px;
+  background: #010B31;
+}
+body main h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: #fff;
+  text-shadow: 1px 1px 25px #fff;
+}
+body main .cards {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main .cards .card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  margin: 50px;
+  padding: 15px;
+  border-radius: 0 50px 0px 50px;
+  box-shadow: 5px 5px 25px 5px #000;
+}
+body main .cards .card a {
+  color: #fff;
+  text-decoration: none;
+  background: #5f2955;
+  transition: 250ms;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 250ms ease-in-out;
+}
+body main .cards .card a:hover {
+  box-shadow: 2px 2px 50px 2px #a70088;
+}
+body footer {
+  height: 100px;
+  background: #000011;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  body header .menuler {
+    width: 900px;
+  }
+  body header .menuler .logo a {
+    font-size: 28px;
+  }
+  body header .menuler .menu a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body header .menuler {
+    padding: 0;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+  }
+  body header .menuler .logo a {
+    display: block;
+    padding: 50px;
+    font-size: 28px;
+  }
+  body header .menuler .menu {
+    flex-direction: column;
+    position: absolute;
+    right: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-right: -150px;
+    gap: 0;
+    height: 100vh;
+    z-index: 5;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body header .menuler .menu a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 100px;
+    text-align: center;
+  }
+  body header .menuler .menu a:hover, body header .menuler .menu a.active {
+    border: none;
+    padding: 15px 100px;
+    color: green;
+  }
+  body header .menuler i {
+    display: block;
+  }
+  body header .content h1 {
+    font-size: 32px;
+  }
+  body header .content p {
+    font-size: 24px;
+  }
+  body header .content a {
+    font-size: 18px;
+  }
+  body main {
+    padding: 0;
+  }
+  body main h1 {
+    padding-top: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

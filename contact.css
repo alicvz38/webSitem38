@@ -1,0 +1,264 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: #010B31;
+}
+body header {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+body header .menuler {
+  width: 1125px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  position: relative;
+}
+body header .menuler .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+body header .menuler .menu {
+  display: flex;
+  gap: 25px;
+  transition: 250ms ease-in-out;
+}
+body header .menuler .menu a {
+  font-family: Poppins;
+  transition: 250ms ease-in-out;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 0px solid #3fa46a;
+  padding: 5px 0;
+}
+body header .menuler .menu a:hover, body header .menuler .menu a.active {
+  border-bottom: 4px solid #3fa46a;
+  padding: 0 0;
+}
+body header .menuler i {
+  display: none;
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  right: 325px;
+  top: 50px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+body header .topHeader {
+  width: 1125px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .topHeader h1.head {
+  width: 1125px;
+  margin: 50px auto;
+  color: #fff;
+  font-size: 32px;
+}
+body header .contact {
+  width: 1125px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  border-radius: 10px;
+}
+body header .contact .adSoyad {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+body header .contact .adSoyad input {
+  width: 450px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  font-size: 18px;
+  color: #555;
+  background: #efefef;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+body header .contact input {
+  width: 975px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  font-size: 18px;
+  color: #555;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background: #efefef;
+}
+body header .contact textarea {
+  resize: none;
+  width: 975px;
+  height: 250px;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: #555;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background: #efefef;
+}
+body header .contact button {
+  background: #5F2955;
+  bordeR: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+body header .contact button:hover {
+  box-shadow: 5px 5px 50px 5px #752967;
+}
+body footer {
+  height: 100px;
+  background: #000011;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  body header .menuler {
+    width: 900px;
+  }
+  body header .menuler .logo a {
+    font-size: 28px;
+  }
+  body header .menuler .menu a {
+    font-size: 16px;
+  }
+  body header .topHeader {
+    width: 90%;
+  }
+  body header .contact {
+    width: 90%;
+  }
+  body header .contact .adSoyad {
+    width: 100%;
+  }
+  body header .contact .adSoyad input {
+    width: 375px;
+  }
+  body header .contact input, body header .contact textarea {
+    width: 825px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body header .menuler {
+    padding: 0;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+  }
+  body header .menuler .logo a {
+    display: block;
+    padding: 50px;
+    font-size: 28px;
+  }
+  body header .menuler .menu {
+    flex-direction: column;
+    position: absolute;
+    right: 150px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-right: -150px;
+    gap: 0;
+    height: 100vh;
+    z-index: 5;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body header .menuler .menu a {
+    display: block;
+    font-size: 16px;
+    padding: 15px 100px;
+    text-align: center;
+  }
+  body header .menuler .menu a:hover, body header .menuler .menu a.active {
+    border: none;
+    padding: 15px 100px;
+    color: green;
+  }
+  body header .menuler i {
+    display: block;
+  }
+  body header .topHeader h1.head {
+    font-size: 20px;
+  }
+  body header .contact .adSoyad {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body header .contact .adSoyad input {
+    width: 600px;
+  }
+  body header .contact input, body header .contact textarea {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 750px) {
+  body header .contact .adSoyad {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body header .contact .adSoyad input {
+    width: 500px;
+  }
+  body header .contact input, body header .contact textarea {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body header .contact .adSoyad {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body header .contact .adSoyad input {
+    width: 400px;
+  }
+  body header .contact input, body header .contact textarea {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body header .contact .adSoyad {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body header .contact .adSoyad input {
+    width: 350px;
+  }
+  body header .contact input, body header .contact textarea {
+    width: 350px;
+  }
+}/*# sourceMappingURL=contact.css.map */
